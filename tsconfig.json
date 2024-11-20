@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "noEmit": true,
+      "isolatedModules": true,
+      "moduleResolution": "node",
+      "allowImportingTsExtensions": true,
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "outDir": "./lib",
+      "rootDir": "./src",
+      "target": "ES2018",
+    },
+    "include": ["src/**/*.ts"],
+}
