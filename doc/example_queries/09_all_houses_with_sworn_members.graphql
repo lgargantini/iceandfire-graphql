@@ -1,0 +1,27 @@
+# get houses and swornMembers
+
+query GetHouses($first: Int){
+  allHouses {
+    houses {
+      name,
+      region,
+      memberConnection(first:$first){
+        swornMembers {
+        	name,
+          culture,
+          died
+      	}
+      }
+    }
+  }
+}
+
+# query vars: 
+
+{
+  	"after": "0",
+	"first": 2,
+	"before": "0",
+	"last": 0
+}
+

@@ -11,12 +11,7 @@ Uses:
 * [graphql-js](https://github.com/graphql/graphql-js) - a JavaScript GraphQL runtime.
 * [DataLoader](https://github.com/facebook/dataloader) - for coalescing and caching fetches.
 * [express-graphql](https://github.com/graphql/express-graphql) - to provide HTTP access to GraphQL.
-* [GraphiQL](https://github.com/graphql/graphiql) - for easy exploration of this GraphQL server.
 
-
-A working demo is available at [https://aqueous-citadel-58469.herokuapp.com](https://aqueous-citadel-58469.herokuapp.com)
-
-Please be patient with the above link. Heroku puts dynos to sleep if inactive for 30 minutes. The server should be responsive within 5 seconds at most on initial visit. Please report any issues you come across.
 
 ## Getting Started
 
@@ -42,5 +37,11 @@ A local express server is in `./server`. It can be run with:
 npm start
 ```
 
-A GraphiQL instance will be opened at http://localhost:PORT/ to
-explore the API.
+Hit the server with Postman or similar tools at `http://localhost:3000/graphql`
+
+NOTE: example of graphql request body:
+```json
+{
+    "query": "{ houses { name } }"
+}
+```
